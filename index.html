@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#08050b">
+<title>For Shofiya ♡</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="sytle.css">
+</head>
+
+<body>
+
+<div id="loader">
+  <div class="loader-heart">♡</div>
+  <div class="loader-text">Something made with love...</div>
+</div>
+
+<canvas id="universe"></canvas>
+<div class="aurora"></div>
+<div class="vignette"></div>
+<div id="particles"></div>
+
+<audio id="music" loop>
+  <source src="Rahat_Fateh_Ali_Khan_-_Mann_Ki_Lagan_(mp3.pm).mp3" type="audio/mpeg">
+</audio>
+
+<button class="music-btn" id="musicBtn">
+  ♫ <span id="musicLabel">Music</span>
+</button>
+
+<div class="progress">
+  <span id="progressBar"></span>
+</div>
+
+<main>
+
+<!-- ================= INTRO ================= -->
+
+<section class="page active" id="intro">
+
+  <div class="floating-orb">
+    <div class="orb-ring ring1"></div>
+    <div class="orb-ring ring2"></div>
+    <div class="orb-heart">♡</div>
+  </div>
+
+  <div class="eyebrow">A LITTLE UNIVERSE MADE FOR YOU</div>
+
+  <h1 class="hero-title">
+    Hey,<br>
+    <span>Shofiya...</span>
+  </h1>
+
+  <p class="hero-copy">
+    I don't know if a website can say<br>
+    what my heart wants to say...
+    <br><br>
+    But I wanted to try.
+  </p>
+
+  <div class="gold-line"></div>
+
+  <button class="main-btn" data-next="letter">
+    <span>Open My Heart</span>
+    <b>♡</b>
+  </button>
+
+  <div class="scroll-hint">
+    <span>SCROLL WITH YOUR HEART</span>
+    <i>↓</i>
+  </div>
+
+</section>
+
+
+<!-- ================= LETTER ================= -->
+
+<section class="page" id="letter">
+
+  <div class="eyebrow">A LETTER FROM MY HEART</div>
+
+  <h2 class="heading">
+    For My <span>Shofiya</span>
+  </h2>
+
+  <div class="teddy-scene">
+
+    <div class="teddy-glow"></div>
+
+    <div class="teddy">
+      <div class="ear left-ear"></div>
+      <div class="ear right-ear"></div>
+
+      <div class="head">
+        <div class="eye left-eye"></div>
+        <div class="eye right-eye"></div>
+        <div class="muzzle">
+          <div class="nose"></div>
+          <div class="mouth"></div>
+        </div>
+        <div class="blush left-blush"></div>
+        <div class="blush right-blush"></div>
+      </div>
+
+      <div class="body">
+        <div class="belly"></div>
+
+        <div class="arm left-arm"></div>
+        <div class="arm right-arm"></div>
+
+        <div class="leg left-leg"></div>
+        <div class="leg right-leg"></div>
+      </div>
+
+      <div class="teddy-heart">♡</div>
+    </div>
+
+    <div class="teddy-shadow"></div>
+  </div>
+
+  <p class="teddy-message">
+    I brought you a little white teddy...<br>
+    because I couldn't bring myself there. 🤍
+  </p>
+
+  <div class="envelope-wrap" id="envelope">
+
+    <div class="envelope">
+
+      <div class="paper">
+        <small>To someone very special</small>
+        <strong>Shofiya ♡</strong>
+        <span>A letter from my heart</span>
+      </div>
+
+      <div class="envelope-back"></div>
+      <div class="envelope-front"></div>
+      <div class="flap"></div>
+
+      <div class="wax">♥</div>
+
+    </div>
+
+  </div>
+
+  <p class="soft-text" id="envelopeHint">
+    Tap the letter to open it
+  </p>
+
+  <button class="main-btn hidden" id="readLetter">
+    Read What I Couldn't Say
+  </button>
+
+</section>
+
+
+<!-- ================= APOLOGY ================= -->
+
+<section class="page" id="apology">
+
+  <div class="eyebrow">NO EGO · NO EXCUSES · JUST MY HEART</div>
+
+  <div class="glass-card">
+
+    <div class="card-top-heart">♡</div>
+
+    <h2 class="script-heading">I'm Sorry, Shofiya</h2>
+
+    <div class="typed-letter" id="typedLetter"></div>
+
+    <div class="signature">
+      With all my heart,<br>
+      ❤️
+    </div>
+
+  </div>
+
+  <button class="main-btn" data-next="understanding">
+    <span>There's More...</span>
+    <b>→</b>
+  </button>
+
+</section>
+
+
+<!-- ================= UNDERSTANDING ================= -->
+
+<section class="page" id="understanding">
+
+  <div class="eyebrow">WHAT I REALLY WANT</div>
+
+  <h2 class="giant-heading">
+    Not Me <span>vs</span> You.
+    <br>
+    It's <em>Us</em> vs The Problem.
+  </h2>
+
+  <div class="quote-card">
+
+    <div class="quote-mark">“</div>
+
+    <p>
+      I don't want to win an argument.
+      I don't want to prove that I'm right.
+      I don't want my ego to become bigger
+      than what we mean to each other.
+    </p>
+
+    <div class="quote-bottom">
+      I just want us to understand each other.
+    </div>
+
+  </div>
+
+  <div class="promise-grid">
+
+    <div class="mini-card">
+      <span>♡</span>
+      <b>Listen</b>
+      <small>I'll listen without interrupting.</small>
+    </div>
+
+    <div class="mini-card">
+      <span>♡</span>
+      <b>Understand</b>
+      <small>Your feelings deserve to be heard.</small>
+    </div>
+
+    <div class="mini-card">
+      <span>♡</span>
+      <b>Communicate</b>
+      <small>I'll talk instead of assuming.</small>
+    </div>
+
+    <div class="mini-card">
+      <span>♡</span>
+      <b>Respect</b>
+      <small>I'll respect your time and space.</small>
+    </div>
+
+  </div>
+
+  <button class="main-btn" data-next="memories">
+    Our Little Memories →
+  </button>
+
+</section>
+
+
+<!-- ================= MEMORIES ================= -->
+
+<section class="page" id="memories">
+
+  <div class="eyebrow">THE MOMENTS I STILL TREASURE</div>
+
+  <h2 class="giant-heading">
+    Our Little <em>World</em>
+  </h2>
+
+  <p class="soft-text">
+    Some moments become memories.<br>
+    Some memories become a part of you.
+  </p>
+
+  <div class="gallery">
+
+    <div class="memory-card">
+      <img src="WhatsApp Image 2026-11-01 at 1.00.43 PM.jpeg">
+      <div class="memory-caption">
+        <span>01</span>
+        One of my favourite moments ♡
+      </div>
+    </div>
+
+    <div class="memory-card">
+      <img src="WhatsApp Image 2026-11-01 at 1.00.44 PM (1).jpeg">
+      <div class="memory-caption">
+        <span>02</span>
+        A smile I'll always remember ✨
+      </div>
+    </div>
+
+    <div class="memory-card">
+      <img src="WhatsApp Image 2026-11-01 at 1.00.44 PM (2).jpeg">
+      <div class="memory-caption">
+        <span>03</span>
+        Something worth cherishing 🤍
+      </div>
+    </div>
+
+    <div class="memory-card">
+      <img src="WhatsApp Image 2026-11-01 at 1.00.44 PM.jpeg">
+      <div class="memory-caption">
+        <span>04</span>
+        Our little memories 🌹
+      </div>
+    </div>
+
+  </div>
+
+  <button class="main-btn" data-next="journey">
+    See Our Journey →
+  </button>
+
+</section>
+
+
+<!-- ================= JOURNEY ================= -->
+
+<section class="page" id="journey">
+
+  <div class="eyebrow">12 · 09 · 2024</div>
+
+  <h2 class="giant-heading">
+    Our <em>Story</em>
+  </h2>
+
+  <p class="soft-text">
+    A little counter for a journey<br>
+    that means a lot to me.
+  </p>
+
+  <div class="counter-card">
+
+    <div class="counter-symbol">♡</div>
+
+    <h3>Time Since We Began</h3>
+
+    <div class="counter-grid">
+
+      <div>
+        <strong id="days">0</strong>
+        <span>DAYS</span>
+      </div>
+
+      <div>
+        <strong id="hours">00</strong>
+        <span>HOURS</span>
+      </div>
+
+      <div>
+        <strong id="minutes">00</strong>
+        <span>MINUTES</span>
+      </div>
+
+      <div>
+        <strong id="seconds">00</strong>
+        <span>SECONDS</span>
+      </div>
+
+    </div>
+
+    <div class="date-pill">
+      OUR STORY BEGAN
+      <b>12 · 09 · 2024</b>
+    </div>
+
+  </div>
+
+  <p class="counter-note">
+    Every second became a memory.<br>
+    Every memory became part of our story.
+  </p>
+
+  <button class="main-btn" data-next="promise">
+    One Last Thing...
+  </button>
+
+</section>
+
+
+<!-- ================= PROMISE ================= -->
+
+<section class="page" id="promise">
+
+  <div class="eyebrow">IF WE EVER GET ANOTHER CHANCE</div>
+
+  <h2 class="giant-heading">
+    I'll Do <em>Better.</em>
+  </h2>
+
+  <div class="promise-big-card">
+
+    <div class="infinity">∞</div>
+
+    <h3>Not just with words.</h3>
+
+    <div class="promise-lines">
+      <p>I'll listen more.</p>
+      <p>I'll communicate better.</p>
+      <p>I'll be patient.</p>
+      <p>I'll think before reacting.</p>
+      <p>I'll respect your feelings.</p>
+      <p>I'll understand before assuming.</p>
+    </div>
+
+    <div class="promise-final">
+      Because your feelings matter to me.
+    </div>
+
+  </div>
+
+  <button class="main-btn" data-next="final">
+    One Question For You ❤️
+  </button>
+
+</section>
+
+
+<!-- ================= FINAL ================= -->
+
+<section class="page" id="final">
+
+  <div class="final-glow-heart">♡</div>
+
+  <div class="eyebrow">FROM THE BOTTOM OF MY HEART</div>
+
+  <h1 class="final-title">
+    Shofiya,
+    <br>
+    <span>Can We Start</span>
+    <br>
+    With Understanding?
+  </h1>
+
+  <p class="final-copy">
+    I don't expect everything to become okay
+    in one moment.
+    <br><br>
+    I just hope that when you're ready,
+    we can talk calmly,
+    understand each other,
+    and decide what feels right for both of us.
+    <br><br>
+    I'm genuinely sorry. 🤍
+  </p>
+
+  <div class="final-buttons">
+
+    <button class="yes-btn" id="talkBtn">
+      Let's Talk ❤️
+    </button>
+
+    <button class="space-btn" id="spaceBtn">
+      I Need Some Time
+    </button>
+
+  </div>
+
+  <p class="tiny-note" id="finalResponse">
+    Whatever you feel, I'll respect it.
+  </p>
+
+</section>
+
+
+<!-- ================= ENDING ================= -->
+
+<section class="page" id="ending">
+
+  <div class="ending-teddy">
+    <div class="mini-teddy">
+      <div class="mini-ear l"></div>
+      <div class="mini-ear r"></div>
+      <div class="mini-head">
+        <i></i><i></i>
+        <b></b>
+      </div>
+      <div class="mini-body"></div>
+      <div class="mini-heart">♡</div>
+    </div>
+  </div>
+
+  <div class="eyebrow">THANK YOU FOR READING THIS</div>
+
+  <h1 class="ending-title">
+    Thank You,
+    <br>
+    <span>Shofiya.</span>
+  </h1>
+
+  <h2 class="ending-sub">
+    You Matter To Me.
+  </h2>
+
+  <div class="ending-message">
+
+    I don't know what tomorrow holds.
+
+    <br><br>
+
+    But I know that your feelings matter,
+    your happiness matters,
+    and what we share deserves honesty.
+
+    <br><br>
+
+    I'm sorry for the hurt.
+
+    <br><br>
+
+    I hope that someday,
+    whenever you're ready,
+    we can understand each other better.
+
+    <br><br>
+
+    With all my heart,
+    <br>
+    ❤️
+
+  </div>
+
+  <div class="ending-infinity">∞</div>
+
+  <button class="main-btn" id="replayBtn">
+    Read It Again ↻
+  </button>
+
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
